@@ -1,0 +1,108 @@
+# ==========================================
+# 1. Environment & Secrets (CRITICAL)
+# ==========================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.pfx
+secrets.json
+
+# ==========================================
+# 2. Virtual Environments & Packages
+# ==========================================
+venv/
+.venv/
+env/
+.env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==========================================
+# 3. Python Bytecode & Caches
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+.ipynb_checkpoints/
+
+# ==========================================
+# 4. Large Models, Checkpoints & Datasets
+# ==========================================
+# Model weights & quantized formats
+*.bin
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.gguf
+*.ggml
+*.tflite
+*.engine
+
+# Local model cache directories
+models/
+checkpoints/
+weights/
+huggingface/
+.cache/
+data/
+datasets/
+logs/
+tensorboard/
+wandb/
+
+# ==========================================
+# 5. IDEs, OS & System Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# ==========================================
+# 6. Temporary Files & Local Overrides
+# ==========================================
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+out/
+tmp/

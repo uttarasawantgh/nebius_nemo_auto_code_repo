@@ -104,7 +104,7 @@ streamlit run app.py
 * **Prompt Payload:**  
   `CRITICAL ALERT: Complex multi-tower cascading structural torsion detected across Tower 4 and adjacent relay masts following high-velocity windshear. Thermal and stress fractures span multiple concealed structural joints.`
 * **Expected Result:**  
-  The dashboard flags the alert, halts automated action, and locks into **`ESCALATE_HITL`**. Scroll down to inspect the **HITL Safety Gate** and click `✅ AUTHORIZE SECURE LOCAL PULL [y]` to simulate operator intervention.
+  The local 7B Vision-Language Model hits its confidence threshold. The dashboard flags the alert, halts automated action, and locks into **`ESCALATE_HITL`**. Scroll down to inspect the **HITL Safety Gate** and click `✅ AUTHORIZE SECURE LOCAL PULL [y]` to simulate operator intervention.
 
 #### Test Case 2: The Routine Test Case (Micro-Edge Baseline)
 * **Objective:** Demonstrate sub-second zero-cost telemetry filtering on the micro-edge profile.
@@ -113,6 +113,22 @@ streamlit run app.py
   `INFO: Routine 15-minute telemetry heartbeat. All structural load cells, tilt sensors, and wind velocity gauges reporting nominal baselines.`
 * **Expected Result:**  
   Resolves instantly via `0.5B Micro-Edge Filter` as **`LOCAL_RESOLVED`** with $0.00 cloud egress cost.
+
+#### Test Case 3: The Cloud Test Case (Deep Cloud Reasoning via Nebius)
+* **Objective:** Demonstrate sub-second zero-cost telemetry filtering on the micro-edge profile.
+* **Selection:** Select `CLOUD: Cross-Site Topological Simulation & Windshear Physics` from the scenario dropdown.
+* **Prompt Payload:**  
+  `CLOUD ESCALATION: Comprehensive cross-site topological load correlation across Towers 1 through 6 requiring deep reasoning and atmospheric fluid dynamics extrapolation.`
+* **Expected Result:**  
+  Resolves instantly via `NVIDIA Nemotron-3-Ultra (550B)` as **`CLOUD_RESOLVED`** with $0.08 cloud egress cost.
+
+#### Test Case 4: The Security Audit Test Case (Claude Agent & HITL Verification)
+* **Objective:** Demonstrate autonomous code vulnerability auditing, refactoring patch generation, and interactive priority gate review (P0, P1, P2).
+* **Selection:** Select `SECURITY: Automated Code Audit & Refactoring` from the scenario dropdown.
+* **Prompt Payload:**  
+  `SECURITY: Perform a security audit and vulnerability review on router.py.`
+* **Expected Result:**  
+  Activates Claude Sonnet via the Claude Agent SDK to perform a full static audit on core/router.py with $0.01 API cost. Escalates to the HITL Safety Intercept Gate, allowing operators to interactively select priority levels and execute test verifications prior to code commit.
 
 ---
 

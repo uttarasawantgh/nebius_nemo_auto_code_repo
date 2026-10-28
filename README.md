@@ -61,8 +61,8 @@ nebius_nemo_auto_code_repo/
 
 ### 2. Clone Repository & Setup Virtual Environment
 ```bash
-git clone https://github.com/uttarasawantgh/techex_amsterdam_repo.git
-cd techex_amsterdam_repo
+git clone https://github.com/uttarasawantgh/nebius_nemo_auto_code_repo.git
+cd nebius_nemo_auto_code_repo
 
 python3 -m venv venv
 source venv/bin/activate
@@ -146,4 +146,5 @@ streamlit run app.py
 
 * **Author:** Uttara Sawant  
 * **GitHub:** [@uttarasawantgh](https://github.com/uttarasawantgh)
-* **Gemini:** Utilized as an AI collaborator for architectural troubleshooting, debugging complex structural normalization logic, and optimizing code documentation. 
+* **Gemini:** Utilized as an AI collaborator for architectural troubleshooting, debugging complex structural normalization logic, and optimizing code documentation.
+* **Architectural Note:** *NemotronCoderAI builds upon and extends the foundational local compute routing framework originally developed in [techex_amsterdam_repo](https://github.com/uttarasawantgh/techex_amsterdam_repo), adapting the NeMo-Switchyard pipeline to incorporate Nebius Token Factory acceleration and Claude Agent SDK governance.*
